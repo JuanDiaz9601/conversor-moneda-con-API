@@ -20,7 +20,7 @@ public class Conversion {
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://v6.exchangerate-api.com/v6/17426a44d9a15240b9a8fde8/pair/"+this.monedaInicial+"/"+this.monedaFinal+"/"+this.valor
+                .uri(URI.create("https://v6.exchangerate-api.com/v6/MIAPIKEY/pair/"+this.monedaInicial+"/"+this.monedaFinal+"/"+this.valor
                 ))
                 .build();
         HttpResponse<String> response = client
